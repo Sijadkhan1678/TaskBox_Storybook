@@ -34,19 +34,11 @@ const Task:FC <TaskProps> = ({task:{id,title,state},onArchiveTask,onPinTask}) =>
           checked={state === "TASK_ARCHIVED"}
         />
         
-        <ListItemText
-      
-          primary={title}
-         // id={id}
-        
+        <ListItemText  primary={title}  // id={id}
         />
       
       {state !== "TASK_ARCHIVED" && (
-        <IconButton
-          
-        onClick={() => onPinTask(id)}
-          
-        >
+        <IconButton onClick={() => onPinTask(id)}  >
    { state === 'TASK_PINNED' ? <StarIcon color='secondary'/> : <StarBorder color='primary'/> }
         </IconButton>
       )}

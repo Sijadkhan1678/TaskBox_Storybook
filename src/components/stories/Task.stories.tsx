@@ -1,27 +1,16 @@
 import React from 'react';
 import  {ComponentStory,ComponentMeta} from '@storybook/react';
 
-
 import Task from '../Task';
 
 
 export default {
+  
   component: Task,
   title: 'Task',
-/*args: {
-  
 
-onArchiveTask: () => {
-  console.log('onArchive')
-},
- onPinTask: () => {
-  console.log('onPin')
-}
-  }*/
-  
 } as ComponentMeta <typeof Task>; 
 
- 
 
 const Template:ComponentStory<typeof Task> = (args) => <Task {...args} />;
 

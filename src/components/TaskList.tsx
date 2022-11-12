@@ -57,14 +57,16 @@ const LoadingRow = (
   return (
     <Box>
 
-    
     <List sx={{ width: '77%', maxWidth: 360, bgcolor: 'white', m: '2rem auto' }}>
+    
     <Typography variant='h5' component='div'>
-    Tasks 
+        Tasks 
     </Typography>
+    
       {tasks.map( (task:task) => (
         <Task key={task.id} task={task} {...events} />
       ))}
+      
     </List>
     </Box>
   );
@@ -79,7 +81,6 @@ TaskList.defaultProps = {
     {  id: '5', title: 'Task 5', state: 'TASK_PINNED' },
     {  id: '6', title: 'Task 6', state: 'TASK_PINNED' },
     {  id: '7', title: 'Task 7', state: 'TASK_PINNED' },
-    
     
   ],
    onArchiveTask: () => {
